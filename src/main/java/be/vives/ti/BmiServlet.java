@@ -1,4 +1,4 @@
-package be.vives;
+package be.vives.ti;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.annotation.WebServlet;

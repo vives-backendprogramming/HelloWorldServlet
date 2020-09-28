@@ -1,4 +1,4 @@
-package be.vives;
+package be.vives.ti;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -12,7 +12,6 @@ public class GreetingsServlet extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         // stap 1: return string in response
         // resp.getWriter().println("Hi there from GreetingsServlet!");
-
 
         // stap 2: return html in response
         //resp.setContentType("text/html");
@@ -35,6 +34,6 @@ public class GreetingsServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        super.doGet(req, resp);
+        doGet(req, resp);
     }
 }
